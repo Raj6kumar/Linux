@@ -442,3 +442,5 @@ Note: Not `nvidia-docker -v` nor `nvidia-docker --version`, they will show the s
 - docker images --filter "dangling=true" -q | xargs -r docker rmi
 - docker stats $(docker ps --filter "name=dev_" -q)
 - docker ps -s  --List running containers including CPU/memory size
+- docker-slim build image-name
+- docker logs container_name | grep ERROR
