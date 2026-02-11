@@ -436,8 +436,9 @@ The first line will be NVIDIA Docker: <x.x.x>, following are the results from `d
 
 Note: Not `nvidia-docker -v` nor `nvidia-docker --version`, they will show the same result as `docker -v` and `docker --version`
 
-
+---
 
 - docker exec -it my-mysql mysql -u root -p
 - docker images --filter "dangling=true" -q | xargs -r docker rmi
 - docker stats $(docker ps --filter "name=dev_" -q)
+- docker ps -s  --List running containers including CPU/memory size
